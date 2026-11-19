@@ -1,0 +1,9 @@
+ID,Test,Hypothesis (H1 = difference/relationship exists),Key numbers,Statistic,p_value,Significant_at_0.05,Bonferroni_significant_at_0.05/8
+T1,Welch t-test,Mean order value differs between male and female customers,"Male 141,807 vs Female 136,883; diff 4,924 (95% CI -9,232 to 19,080); d=0.04",t=0.68,0.49501147851458344,False,False
+T2,Welch t-test,Mean order value in Q4 differs from Q3 (2025),"Q4 144,511 (n=259) vs Q3 128,163 (n=237); diff 16,349 (95% CI -3,570 to 36,267); d=0.14",t=1.61,0.10746560022713511,False,False
+T3,Chi-square goodness of fit,Order count in Q3 and Q4 is the same (both quarters have 92 days),Q3 237 orders vs Q4 259 orders,chi2=0.98,0.32323632332476787,False,False
+T4,One-way ANOVA (Kruskal-Wallis check p=0.735),Mean order value differs across product categories,"{'Education': 140627.0, 'Electronics': 143442.0, 'Fashion': 127153.0, 'Furniture': 135356.0, 'Grocery': 145305.0}",F=0.72,0.5802864995733577,False,False
+T5,Chi-square test of independence,Category mix differs across the 4 customer segments,Cramer's V=0.068,"chi2=13.86, dof=12",0.30981357851823427,False,False
+T6,Chi-square test of independence,Age-group mix differs across the 4 customer segments,Cramer's V=0.072,"chi2=15.51, dof=12",0.214836938669125,False,False
+T7,Pearson correlation (Spearman check p=0.854),Customer age is related to order value,r=0.001,r=0.001,0.9673953599661104,False,False
+T8,Binomial test,Electronics share of orders differs from 33.3% (2 of the 6 products),Electronics 354/1000 = 35.4% (95% CI 32.4% to 38.5%),k=354,0.16909085833765175,False,False
